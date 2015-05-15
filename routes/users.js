@@ -5,9 +5,9 @@ var path = require('path');
 
 
 router.get("/", function(req,res,next){
-  //if(req.isAuthenticated()){
+  if(req.isAuthenticated()){
     res.sendFile(path.resolve(__dirname, '../views/users.html'));
-  //}
+  }
 });
 
 router.get('/list', function(req, res, next){
