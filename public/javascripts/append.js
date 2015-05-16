@@ -16,8 +16,10 @@ function getUsers(){
         dataType: 'json',
         success: function(data, textStatus, jqXHR){
             console.log(data);
+            $(".btn-display").hide();
+            $('.displayUsers').append('<h2>Current Users</h2>');
             for(var i = 0; i <data.length; i++){
-                $('.displayUsers').append('<div class='+data[i].id+'><p>'+data[i].username+'</p><ul><li>'+data[i].firstname+'</li><li>'+data[i].lastname+'</li><li>'+data[i].email+'</li></ul></div>')
+                $('.displayUsers').append('<div class='+data[i].id+'><p>'+data[i].username+'</p><ul><li>'+data[i].firstname+'</li><li>'+data[i].lastname+'</li><li>'+data[i].email+'</li></ul></div>');
             }
 
         },

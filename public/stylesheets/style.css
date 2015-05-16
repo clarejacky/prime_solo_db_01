@@ -12,3 +12,6 @@ button {
   width: 150px;
   margin-bottom: 20px;
 }
+.displayUsers ul {
+  display: inline-block;
+}
