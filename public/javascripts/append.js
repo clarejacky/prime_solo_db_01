@@ -19,7 +19,7 @@ function getUsers(){
             $(".btn-display").hide();
             $('.displayUsers').append('<h2>Current Users</h2>');
             for(var i = 0; i <data.length; i++){
-                $('.displayUsers').append('<div class='+data[i].id+'><p>'+data[i].username+'</p><ul><li>'+data[i].firstname+'</li><li>'+data[i].lastname+'</li><li>'+data[i].email+'</li></ul></div>');
+                $('.displayUsers').append('<div class='+data[i].id+'><p class="well">UserName: '+data[i].username+'</p><ul><li>First Name: '+data[i].firstname+'</li><li>Last Name: '+data[i].lastname+'</li><li>Email: '+data[i].email+'</li></ul></div>');
             }
 
         },
